@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <gradient
+        android:angle="-90"
+        android:endColor="#F9F9F9"
+        android:startColor="#DBDBDB" />
+
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+</shape><!-- From: file:/Users/anar/Desktop/MusicAZ/musicaz_v2/app/src/main/res/drawable/song_pressed.xml -->

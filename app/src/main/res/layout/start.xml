@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:parallax="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    android:background="@drawable/background3">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+
+    <RelativeLayout
+        android:id="@+id/panelLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/smartphone"
+            android:drawablePadding="20dp"
+            android:gravity="center|left"
+            android:hint="70XXXXXXX"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textColorHint="#92ffffff"
+            android:textSize="18sp">
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/username"
+            android:layout_marginBottom="2dp"
+            android:background="#61ffffff"
+
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/username"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="20dp"
+            android:gravity="center|left"
+            android:hint="•••••••"
+            android:imeOptions="actionDone"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textColorHint="#92ffffff"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/password"
+            android:layout_marginBottom="40dp"
+            android:background="#61ffffff"
+
+            />
+
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/login"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/register"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/sLogin"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="15sp"
+            android:textStyle="normal|italic"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_type="info" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/password_reset"
+            android:layout_gravity="center"
+            android:text="Qeydiyyat"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="15sp"
+            android:textStyle="normal|italic"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_type="primary" />
+
+        <Button
+            android:id="@+id/password_reset"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Şifrənizi unutmusunuz ?"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/panelRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/registerUsername"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/smartphone"
+            android:drawablePadding="20dp"
+            android:gravity="center|left"
+            android:hint="70XXXXXXX"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textColorHint="#92ffffff"
+            android:textSize="18sp">
+
+            <requestFocus />
+        </EditText>
+
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/registerUsername"
+            android:background="#61ffffff"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sendpin"
+            android:layout_below="@+id/registerUsername"
+            android:layout_marginTop="1dp"
+            android:padding="15dp"
+            android:text="@string/sRegisterText"
+            android:textColor="#81ffffff"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/sendpin"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/sSendPinCode"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="15sp"
+            android:textStyle="normal|italic"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_type="info" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panelForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/forgotUsername"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/smartphone"
+            android:drawablePadding="20dp"
+            android:gravity="center|left"
+            android:hint="70XXXXXXX"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textColorHint="#92ffffff"
+            android:textSize="18sp">
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/registerUsername"
+            android:background="#61ffffff"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sendpin"
+            android:layout_below="@+id/registerUsername"
+            android:layout_marginTop="1dp"
+            android:padding="15dp"
+            android:text="@string/sResetPinCodeText"
+            android:textColor="#81ffffff"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/forgotSendPin"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/sResetPinCode"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="15sp"
+            android:textStyle="normal|italic"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_type="info" />
+    </LinearLayout>
+
+</RelativeLayout>

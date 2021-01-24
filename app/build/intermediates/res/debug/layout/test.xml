@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/music_cover"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/music_artist_main"
+        android:layout_above="@+id/controls_main"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_cover"
+        />
+
+    <TextView
+        android:id="@+id/music_title_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:alpha="0.7"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:text="Addicted"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/music_artist_main"
+        android:layout_width="match_parent"
+        android:paddingLeft="30dp"
+        android:alpha="0.7"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music_title_main"
+        android:maxLines="1"
+        android:textStyle="italic"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffebebeb"
+        android:text="Enrique Iglesias"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/music_artist_main"
+        android:src="@drawable/shadow_bottom"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/controls_main"
+        android:src="@drawable/shadow_top"
+        />
+
+
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_above="@+id/seekProgress"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/current_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="0:00"
+        android:textColor="#FBC02D" />
+
+
+
+    <TextView
+        android:id="@+id/total_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="3:24"
+        android:textColor="#FBC02D" />
+
+</RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/controls_main"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        >
+
+
+        <ImageButton
+            android:id="@+id/shuffle_button_main"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/playerPrev_main"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/shuffle_button" />
+
+        <ImageButton
+            android:id="@+id/playerPrev_main"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/playerPlay_main"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/previous_button" />
+
+        <ImageButton
+            android:id="@+id/playerPlay_main"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/play_button" />
+
+        <ImageButton
+            android:id="@+id/playerNext_main"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/playerPlay_main"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/next_button" />
+
+        <ImageButton
+            android:id="@+id/repeat_main"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/playerNext_main"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/repeat_button" />
+
+
+    </RelativeLayout>
+
+
+
+    <SeekBar
+        android:id="@+id/seekProgress"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-16dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/controls_main"
+        />
+
+
+</RelativeLayout><!-- From: file:/Users/anar/Desktop/MusicAZ/musicaz_v2/app/src/main/res/layout/test.xml -->

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:id="@+id/song_background"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:text="100"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:textStyle="normal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/duration"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_toRightOf="@+id/position"
+        >
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="bottom"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:lines="1"
+            android:text="Teenage Dream"
+            android:textColor="#ff404040"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <TextView
+            android:id="@+id/singer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:layout_below="@+id/title"
+            android:layout_gravity="left"
+            android:paddingTop="3dp"
+            android:text="Katty Perry"
+            android:textColor="#ff9b9b9b"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+ <TextView
+     android:id="@+id/duration"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="2:58"
+     android:layout_centerVertical="true"
+     android:paddingRight="20dp"
+     android:layout_alignParentRight="true"
+     />
+
+</RelativeLayout><!-- From: file:/Users/anar/Desktop/MusicAZ/musicaz_v2/app/src/main/res/layout/song_item.xml -->

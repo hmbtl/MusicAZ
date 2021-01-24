@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd1d1d1"
+    android:orientation="vertical">
+
+
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/album_grid_view"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="3dp"
+        android:layout_alignParentBottom="true"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" />
+
+</RelativeLayout><!-- From: file:/Users/anar/Desktop/MusicAZ/musicaz_v2/app/src/main/res/layout/album_list_layout.xml -->

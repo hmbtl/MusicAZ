@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/shadow_rect"
+        android:src="@drawable/empty_cover" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignLeft="@+id/album_cover"
+        android:layout_alignRight="@+id/album_cover"
+        android:layout_alignBottom="@+id/album_cover"
+        android:layout_margin="12dp"
+        android:padding="10dp"
+        android:background="#66000000"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="wrap_content"
+            android:gravity="center|left"
+            android:layout_height="match_parent"
+            android:textAllCaps="true"
+            android:layout_toLeftOf="@+id/album_count"
+            android:layout_alignParentLeft="true"
+            android:text="Avengers: Age of Ultron"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/album_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="20"
+            android:gravity="center|right"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="visible"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout><!-- From: file:/Users/anar/Desktop/MusicAZ/musicaz_v2/app/src/main/res/layout/album_item.xml -->

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MusicActivity!</string>
+    <string name="app_name">music.az</string>
+    <string name="search_hint">Type song name</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    
+    <string name="sUseExisting">Mövcud istifadəçi</string>    
+    <string name="sLogin">Daxil ol</string>
+    <string name="sForgotPass">Şifrəmi unutdum</string>
+    <string name="sGoBack">Geri dön</string>
+    <string name="sNewUser">Yeni istifadəçi</string>
+    <string name="sRegister">Qeydə al</string>
+    <string name="sCancel">İmtina</string>
+	<string name="sLatestMusic">Son əlavələr</string>
+	<string name="sTopMusic">Sevilən mahnilar</string>
+	<string name="sHistory">Yaddaş</string>
+	<string name="sFavorites">Bəyəndiklərim</string>
+	<string name="sAddToFavorites">Siyahıma əlavə et</string>
+	<string name="sRemoveFromFavorites">Siyahımdan çıxart</string>
+	<string name="sCategories">Kateqoriyalar</string>
+	<string name="sAllCategories">Bütün Kateqoriyalar</string>
+	<string name="sSearchText"></string>
+	<string name="sSearch">Axtar</string>
+	<string name="sExit">Çıxış</string>
+	<string name="sLogoutExit">Nömrəni unut və çıx</string>
+	<string name="sSendPinCode">Şifrə göndər</string>
+	<string name="sResetPinCode">Şifrənizi yeniləyin</string>
+	<string name="sRegisterText">Qeydiyyatdan keçmək üçün mobil nömrənizi daxil edin.</string>
+	<string name="sResetPinCodeText">Parolunuzu yeniləmək üçün qeydiyyatdan keçdiyiniz nömrənizi daxil edin.</string>
+
+	<string name="sClearAll">Hamısını sil</string>
+	<string name="sNoMusicFound">Boş</string>
+	<string name="sBuffering">Yüklənir...</string>
+	<string name="sWantToExit">Music.Az-dan</string>
+	<string name="sSearching">Axtarılır...</string>							
+	<string name="sAddedSuccess">Əlavə olundu</string>
+	<string name="sClearedSuccess">Əlavə olundu</string>
+	<string name="sRemovedSuccess">Silindi</string>
+	<string name="sError">Xəta</string>
+	<string name="sDuplicateSession">Sizin hesabınız başqa cihazda istifade olunur. Xahiş olunur bir də sisteme daxil ol.</string>
+	<string name="sRegistering">Qeydiyyat aparılır</string>
+	<string name="sEmptyNumber">Boş nömrə</string>
+	<string name="sEmptyNumPass">Boş nömrə vəya şifrə</string>
+	<string name="sLogging">Yoxlanılır...</string>
+	<string name="sSendingPin">Kod göndərilir...</string>
+	<string name="sSendingPinSuccess">Kod göndərildi</string>
+
+	<string name="login">Login</string>
+	<string name="error_login_message">Daxil etdiyin nömrə və ya pincode düzgün deyil xahiş edirik yenidən yoxlayasınız.</string>
+	<string name="cancel">İmtina</string>
+	<string name="ok">Ok</string>
+
+	<string name="error_wrong_number">Nömrənin formatı düzgün deyil. Xahiş edirik yenidən yoxlayasınız.</string>
+	<string name="error_empty_password">Xahiş edirik pinkodu daxil edin.</string>
+	<string name="error_general">Bir xəta əmalə gəli xahiş edirik yenidən yoxlayardınız.</string>
+</resources>

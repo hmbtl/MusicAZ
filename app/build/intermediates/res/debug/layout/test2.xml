@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/search_edit_background"
+            android:hint="Axtar"
+            android:drawableRight="@drawable/search"
+            android:paddingBottom="7dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:textColorHint="#9dffffff" />
+
+        <ImageButton
+            android:id="@+id/search_edit_cancel"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_notification"
+            android:background="@android:color/transparent"
+            android:tint="#fff"
+            android:layout_alignRight="@+id/search_edit"
+            android:layout_alignTop="@+id/search_edit"
+            android:paddingRight="10dp"
+            android:layout_alignBottom="@+id/search_edit"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/navigation_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/settings_button"
+            android:layout_below="@+id/search_edit"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:background="#4dffffff" />
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/arrow_left"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/history"
+                android:gravity="right|center"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:paddingTop="22dp"
+                android:text="Qulas asdıqlarım"
+                android:textAllCaps="true"
+                android:textColor="#Fff"
+                android:textSize="20sp"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@+id/history"
+                android:layout_marginRight="20dp"
+                android:background="#4dffffff" />
+
+            <TextView
+                android:id="@+id/my_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/history"
+                android:drawableLeft="@drawable/arrow_left"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/favourites"
+                android:gravity="right|center"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:paddingTop="21dp"
+                android:text="Seçdiklərim"
+                android:textAllCaps="true"
+                android:textColor="#Fff"
+                android:textSize="20sp"
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@+id/my_library"
+                android:layout_marginRight="20dp"
+                android:background="#4dffffff" />
+
+
+            <TextView
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_library"
+                android:drawableLeft="@drawable/arrow_left"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/exit"
+                android:gravity="right|center"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:paddingTop="21dp"
+                android:text="Çıxış"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="20sp"
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@+id/logout_button"
+                android:layout_marginRight="20dp"
+                android:background="#4dffffff" />
+
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/song_list_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/settings_button"
+            android:layout_below="@+id/search_edit"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            android:divider="#44686868"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/settings"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Parametrlər"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/anar/Desktop/MusicAZ/musicaz_v2/app/src/main/res/layout/test2.xml -->

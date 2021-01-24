@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="0dp" />
+    <gradient android:endColor="#fff" android:startColor="#fff" android:angle="90" />
+</shape><!-- From: file:/Users/anar/Desktop/MusicAZ/musicaz_v2/app/src/main/res/drawable/song_item_background_color.xml -->
